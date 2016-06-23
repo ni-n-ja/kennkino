@@ -12,7 +12,7 @@ var reset = '\u001b[0m';
 var a = Math.floor(Math.random() * moji.length);
 var b;
 
-process.stdout.write(moji[a]);
+process.stdout.write(moji[a]+ color[Math.floor(Math.random() * color.length)]);
 for (b = Math.floor(Math.random() * moji.length); !(moji[a] == "ケ" && moji[b] == "ツ");) {
     a = b;
     b = Math.floor(Math.random() * moji.length);
